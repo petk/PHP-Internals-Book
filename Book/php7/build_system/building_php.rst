@@ -78,7 +78,7 @@ have the first three installed by default):
 * ``gcc`` or some other compiler suite.
 * ``libc-dev``, which provides the C standard library, including headers.
 * ``make``, which is the build-management tool PHP uses.
-* ``autoconf`` (2.59 or higher), which is used to generate the ``configure`` script.
+* ``autoconf`` (2.64 or higher), which is used to generate the ``configure`` script.
 * ``automake`` (1.4 or higher), which generates ``Makefile.in`` files.
 * ``libtool``, which helps manage shared libraries.
 * ``bison`` (2.4 or higher), which is used to generate the PHP parser.
@@ -166,7 +166,8 @@ supported options using ``--help``::
 
     ~/php-src> ./configure --help | less
 
-The first part of the help will list various generic options, which are supported by all autoconf-based configuration
+The first part of the help will list various generic options, which are supported by all 
+-based configuration
 scripts. One of them is the already mentioned ``--prefix=DIR``, which changes the installation directory used by
 ``make install``. Another useful option is ``-C``, which will cache the result of various tests in the ``config.cache``
 file and speed up subsequent ``./configure`` calls. Using this option only makes sense once you already have a working
